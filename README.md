@@ -77,7 +77,10 @@
     - The style file will called be called in the component file only.
     - The component can be reused in other projects, without losing the style.
 - CSS Modules
-
+  - CSS modules solve the problem of clashes, this problem could happened when we used two classes with the same name into our project.
+  - CSS modules keeps these classes scoped in the component to avoid any clashes.
+  - The name of the classes should be in a camelCase convention.
+  - To pass multiple classes, we put theme into array and join them.
 - CSS-IN-JS
   - Benefits:
     - Scoped styles
@@ -85,3 +88,15 @@
     - Easier to delete a component
     - Easier to style based on props/state
     - Libraries: styled component, polished, Emotion.
+
+### What is separation of concerns mean?
+- Mean divide a program into distinct sections where each section handles a specific functionality, rather than having everything in one place.
+- So, our app will be:
+  - Modular 
+  - Easer to understand
+  - Easier to maintain
+  - Easier to modify 
+
+---
+
+## Managing Component State

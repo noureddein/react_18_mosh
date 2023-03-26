@@ -2,7 +2,8 @@ import { useState } from "react";
 
 import Button from "./components/exercises/Button";
 import Alert from "./components/Alert";
-import ListGroup from "./components/ListGroup";
+import ListGroup from "./components/ListGroupCssInJs";
+import LikeButton from "./components/LikeButton";
 
 export default function App() {
     const [show, setShow] = useState(false);
@@ -22,8 +23,9 @@ export default function App() {
             <ListGroup
                 heading="Miami"
                 items={["New your", "Los Angeles", "San Francisco"]}
-                onSelectItem={()=> {}}
+                onSelectItem={() => {}}
             />
+            <LikeButton onClick={() => console.log("Clicked")} />
         </div>
     );
 }
